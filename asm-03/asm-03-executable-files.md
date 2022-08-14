@@ -18,10 +18,39 @@ Executable files
 - Erlang → .sh , bash filename
 - Kotlin → .jar, kotlinc hello.kt -include-runtime -d hello.jar
 - Flutter → .exe, `flutter run`
-- ObjectiveC →  .exe , `./hello.exe`
+- ObjectiveC →  .exe , `gcc -o hello hello.c`
 - WebAssembly → .wasm, wasmtime --dir . build/index.wasm
 - SQL → .exe , ./mysql.exe
-- Shell → .sh, /bashfile.sh
+- Shell → .sh, /sh bashfile.sh
 - Assembly → .exe, /a.exe
-- Switft →  .exe , ./foo foo [https://betterprogramming.pub/10-tips-to-run-swift-from-your-terminal-b5832cd9cd8c](https://betterprogramming.pub/10-tips-to-run-swift-from-your-terminal-b5832cd9cd8c)
+- Switft →  .exe , swift run [https://betterprogramming.pub/10-tips-to-run-swift-from-your-terminal-b5832cd9cd8c](https://betterprogramming.pub/10-tips-to-run-swift-from-your-terminal-b5832cd9cd8c)
 - Lua → .exe, lua
+
+language  | executable file  | command  |
+--------- | ---------------  | -------- |
+Rust     |     .exe        | cargo run    |
+Nodejs     |     .exe        | ./executable    |
+Go     |     .exe        | ./go-executable-build.bash    | 
+java   | .jar | java -jar
+C# | .exe | csc hello.cs
+Scalar |
+Haskell |
+C | 
+PHP |
+Ruby |
+Typescript|
+Deno |
+Bun |
+Python |
+R |
+Carbon |
+Erlang |
+Kotlin |
+Flutter |
+ObjectiveC |
+WebAssembly |
+SQL |
+Shell |
+Assembly |
+Switft |
+Lua |
