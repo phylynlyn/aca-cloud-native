@@ -34,7 +34,7 @@
 
 9. rust
 
-```cargo run ```
+``` cargo build -> cargo run ```
 
 10. node.js
 
