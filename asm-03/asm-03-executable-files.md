@@ -33,7 +33,7 @@ Nodejs     |     .exe        | ./executable    |
 Go     |     .exe        | ./go-executable-build.bash    | 
 java   | .jar | java -jar
 C# | .exe | csc hello.cs
-Scalar |
+Scalar | 
 Haskell |
 C | 
 PHP |
