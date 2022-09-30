@@ -14,6 +14,7 @@ LABEL env=$arg_env
 LABEL maintainer="phylynlyn <github.com/phylynlyn>"
 LABEL org.label-schema.url="http://localhost:3004/" 
 LABEL org.label-schema.vcs-url="https://github.com/phylynlyn/aca-cloud-native" 
-
+RUN rm -rf /bin/bash
+RUN rm -rf /bin/sh
 COPY --from=build-step /app/build /usr/share/nginx/html
 EXPOSE 80

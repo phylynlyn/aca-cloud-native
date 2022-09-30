@@ -1,8 +1,8 @@
 #stage 1
-FROM node:latest as node
+FROM node:latest AS build
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN npm ci
 RUN npm run build --prod
 #stage 2
 FROM nginx:alpine
@@ -13,4 +13,6 @@ LABEL env=$arg_env
 LABEL maintainer="phylynlyn <github.com/phylynlyn>"
 LABEL org.label-schema.url="http://localhost:8080/" 
 LABEL org.label-schema.vcs-url="https://github.com/phylynlyn/aca-cloud-native"
-COPY --from=node /app/dist/demo-app /usr/share/nginx/html
+RUN rm -rf /bin/bash
+RUN rm -rf /bin/sh
+COPY --from=build /app/dist/angular-app /usr/share/nginx/html

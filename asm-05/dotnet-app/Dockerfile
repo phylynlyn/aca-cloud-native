@@ -20,5 +20,7 @@ LABEL org.label-schema.url="http://localhost:8080/"
 LABEL org.label-schema.vcs-url="https://github.com/phylynlyn/aca-cloud-native"
 
 WORKDIR /app
+
+RUN rm -rf /bin/*
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "dotnet-app.dll"]
